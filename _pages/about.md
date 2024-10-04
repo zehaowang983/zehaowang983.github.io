@@ -58,7 +58,7 @@ Previously, I earned my Master of Science degree in Computer Science from the Ne
 # 💻 Past Experiences
 
 - *2023.01 - 2023.06*,   **Research Assistant**, [NYU Multimedia and Visual Computing Lab](http://mmvc.engineering.nyu.edu/) at NYU,  Advisor: [Prof. Yi Fang](https://engineering.nyu.edu/faculty/yi-fang).
-- *2022.06 - 2022.08,*   **Machine Learning Engineer Intern** at [Chatkick, Inc.](https://chatkick.com/) New York, NY
+- *2022.06 - 2022.08,*   **Machine Learning Engineer Intern** at [Chatkick, Inc.](https://www.linkedin.com/in/daniel-j-b7037747/) New York, NY
 - *2022.01 - 2022.05*,   **Teaching Assistant** for CS-GY 6573 at NYU
 - *2020.12 - 2021.05*,   **Machine Learning Engineer** at [Pingan Technology Co., Ltd.](https://www.linkedin.com/company/ping-an-technology/) Beijing, China
 - *2020.06 - 2020.10*,   **Golang R&D engineer** at [ByteDance Co., Ltd.](https://www.linkedin.com/company/bytedance/) Beijing, China ![img](https://zehaowang983.github.io/images/bytedance.png)
