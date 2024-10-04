@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zehao Wang"
   avatar           : "images/profile-512x512.jpg"
-  bio              : "2nd-year Ph.D. student in Computer Science at UCR, interested in Multi-Agent Systems and Cooperative Learning for Perception and Decision Making."
+  bio              : "2nd-year Ph.D. student in Computer Science at UCR, interested in autonomous agents and multiagent systems."
   location         : "CA, USA"
   employer         :
   pubmed           : 
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "zehao-wang-b909621a4"
+  # linkedin         : "zehao-wang-b909621a4"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
