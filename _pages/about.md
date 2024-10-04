@@ -57,15 +57,11 @@ Previously, I earned my Master of Science degree in Computer Science from the Ne
 
 # 💻 Past Experiences
 
-- *2023.03 - 2023.05*,   **Research Assistant**, [NYU Multimedia and Visual Computing Lab](http://mmvc.engineering.nyu.edu/) at NYU,  Advisor: [Prof. Yi Fang](https://engineering.nyu.edu/faculty/yi-fang).
-  - PolyFormer, Denoising Diffusion Probabilistic Models, and 3D Shape Generation.
-- *2022.06-2022.08,*   **Machine Learning Engineer Intern** at [Chatkick, Inc.](https://chatkick.com/) New York, NY
-  - Employed OCR, DETR, and NER models for resume information extraction, leveraging tools like AWS Lambda, HuggingFace, and spaCy.
+- *2023.01 - 2023.06*,   **Research Assistant**, [NYU Multimedia and Visual Computing Lab](http://mmvc.engineering.nyu.edu/) at NYU,  Advisor: [Prof. Yi Fang](https://engineering.nyu.edu/faculty/yi-fang).
+- *2022.06 - 2022.08,*   **Machine Learning Engineer Intern** at [Chatkick, Inc.](https://chatkick.com/) New York, NY
 - *2022.01 - 2022.05*,   **Teaching Assistant** for CS-GY 6573 at NYU
 - *2020.12 - 2021.05*,   **Machine Learning Engineer** at [Pingan Technology Co., Ltd.](https://www.linkedin.com/company/ping-an-technology/) Beijing, China
-  - Enhanced a Django/Numpy/OpenCV computer vision annotation tool with automatic image labeling using pre-trained models.
 - *2020.06 - 2020.10*,   **Golang R&D engineer** at [ByteDance Co., Ltd.](https://www.linkedin.com/company/bytedance/) Beijing, China ![img](https://zehaowang983.github.io/images/bytedance.png)
-  - Collaborated on a Kubernetes/Gin container orchestration service, enhanced microservice communication with Protocol Buffers and gRPC, ensuring efficient data compression, high available, and high throughput.
 
 <span class='anchor' id='selected-awards'></span>
 
