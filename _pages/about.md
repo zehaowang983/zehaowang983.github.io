@@ -16,19 +16,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hey, I'm a second year Ph.D. student at [Trustworthy Autonomous Systems Laboratory](https://tasl.ucr.edu/), University of California, Riverside. It is my honor to be advised by Prof. [Jiachen Li](https://jiachenli94.github.io/).
+Hey, I'm a third year Ph.D. student at [Trustworthy Autonomous Systems Laboratory](https://tasl.ucr.edu/), University of California, Riverside. It is my honor to be advised by Prof. [Jiachen Li](https://jiachenli94.github.io/).
 
 My research interest lies in the confluence of autonomous agents and multiagent systems, focusing on leveraging efficient multi-agent communication to develop robust algorithms for collaboratively solving perception, prediction, and decision-making challenges in real-world scenarios.
-
-Previously, I earned my Master of Science degree in Computer Science from the New York University in 2023, where I was also interested on assessing the robustness of LLMs, with a particular interest in exploiting the vulnerability and generating adversarial prompts.
 
 <span class='anchor' id='research-interests'></span>
 
 # 🔥 Research Interests
 
-- Cooperative Perception, 3D/4D Occupancy Prediction, Motion Prediction, Motion Planning
-- VLA for Autonoumous Driving
 - Multi-Agent Systems
+- Human-Robot Interaction
+- VLA for Autonoumous Driving
 
 <span class='anchor' id='projects'></span>
 
@@ -44,6 +42,7 @@ Previously, I earned my Master of Science degree in Computer Science from the Ne
 
 # 📝 Service
 
+- CVPR / ICCV reviewer
 - RA-L reviewer
 - ICRA reviewer
 
