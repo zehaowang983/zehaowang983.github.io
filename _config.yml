@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zehao Wang"
   avatar           : "images/profile-512x512.jpg"
-  bio              : "2nd-year Ph.D. student in Computer Science at UCR, interested in autonomous agents and multiagent systems."
-  location         : "CA, USA"
+  bio              : "3rd-year Ph.D. student in Computer Science at UCR, interested in autonomous driving and multiagent systems."
+  location         : "Riverside, CA, USA"
   employer         :
   pubmed           : 
   # googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
