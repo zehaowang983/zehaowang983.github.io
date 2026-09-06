@@ -124,8 +124,35 @@ My research interest lies in the confluence of autonomous agents and multiagent 
 
   <div class="pub">
     <div class="pub-title">
+      🧭 <a href="#">CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting</a>
+    </div>
+
+    <div class="pub-authors">
+      <strong>Zehao Wang</strong>, Jianpeng Yao, Yuping Wang, Yiping Li, Jiaqi Li, Zhixu Li, Kanghoon Lee,
+      Jinfeng Wang, Cong Liu, Zhaowei Tan, Jinkyoo Park, Jiachen Li<sup>‡</sup>
+    </div>
+
+    <span class="venue">Conference on Robot Learning (CoRL), 2026</span>
+
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      🦾 <a href="#">Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance</a>
+    </div>
+
+    <div class="pub-authors">
+      Zhefei Gong, Hefeifei Jiang, <strong>Zehao Wang</strong>, Jiachen Li<sup>‡</sup>
+    </div>
+
+    <span class="venue">Conference on Robot Learning (CoRL), 2026</span>
+
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
       <img src="/assets/images/dmw_logo.png" class="pub-logo" alt="Drive My Way logo">
-      <a href="#">Drive My Way: Preference Alignment of Vision–Language–Action Models for Personalized Driving</a>
+      <a href="https://dmw-cvpr.github.io/">Drive My Way: Preference Alignment of Vision–Language–Action Models for Personalized Driving</a>
     </div>
 
     <div class="pub-authors">
@@ -133,7 +160,7 @@ My research interest lies in the confluence of autonomous agents and multiagent 
     </div>
     <span class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</span>
     <div class="pub-links">
-      <a href="#">🌐 Project</a>
+      <a href="https://dmw-cvpr.github.io/">🌐 Project</a>
     </div>
     <ul>
       <li>A vision–language–action (VLA) model that aligns with both long-term driving patterns and real-time preference instructions.</li>
