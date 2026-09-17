@@ -213,7 +213,7 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
 # 🧑‍🏫 Academic Service
 
 - **Workshop Organizer**: [Human-Centered Robot Learning and Interaction (HumanRLI)](https://hc-robot-learning.github.io/), CoRL 2026
-- **Conference Reviewer**: CVPR, ICCV, ICRA
+- **Conference Reviewer**: CVPR, ICCV, CoRL, ICRA, IROS
 - **Journal Reviewer**: RA-L
 
 <span class='anchor' id='awards'></span>
