@@ -1,0 +1,188 @@
+/* ==========================================================================
+   DARK MODE
+   Follows the OS setting. Academic components read the tokens from
+   _academic.scss; the rules below cover the theme chrome that still uses
+   hard-coded light colors.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ac-bg:           #14171c;
+    --ac-surface:      #1b1f26;
+    --ac-surface-2:    #222831;
+    --ac-text:         #e6e8eb;
+    --ac-text-soft:    #b9c0ca;
+    --ac-muted:        #8b939f;
+    --ac-border:       #2c323b;
+    --ac-border-soft:  #23282f;
+    --ac-accent:       #7aa7e0;
+    --ac-accent-soft:  #1e2b3d;
+    --ac-shadow:       0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .35);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--ac-bg);
+    color: var(--ac-text-soft);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--ac-text);
+  }
+
+  a {
+    color: var(--ac-accent);
+
+    &:visited {
+      color: var(--ac-accent);
+    }
+
+    &:hover {
+      color: #a8c6ec;
+    }
+  }
+
+  /* --- masthead / nav --- */
+
+  .masthead {
+    background-color: rgba(20, 23, 28, .92);
+    border-bottom-color: var(--ac-border);
+    backdrop-filter: saturate(140%) blur(8px);
+  }
+
+  .greedy-nav {
+    background: transparent;
+
+    a {
+      color: var(--ac-text-soft);
+
+      &:hover {
+        color: var(--ac-accent);
+      }
+    }
+
+    button {
+      background-color: var(--ac-surface-2);
+      color: var(--ac-text);
+    }
+
+    .hidden-links {
+      background: var(--ac-surface);
+      border-color: var(--ac-border);
+
+      a:hover {
+        background: var(--ac-surface-2);
+        color: var(--ac-accent);
+      }
+
+      &::before {
+        border-bottom-color: var(--ac-border);
+      }
+
+      &::after {
+        border-bottom-color: var(--ac-surface);
+      }
+    }
+  }
+
+  /* --- sidebar / author profile --- */
+
+  .sidebar,
+  .author__content,
+  .author__urls {
+    color: var(--ac-text-soft);
+  }
+
+  .author__name {
+    color: var(--ac-text);
+  }
+
+  .author__bio,
+  .author__urls li {
+    color: var(--ac-text-soft);
+  }
+
+  .author__avatar img {
+    border-color: var(--ac-border);
+  }
+
+  .author__urls {
+    background: transparent;
+    border-color: var(--ac-border);
+  }
+
+  /* Brand colors in _utilities.scss are near-black for some icons (GitHub,
+     Weibo, …) and disappear on a dark ground. */
+  .social-icons {
+    .fa,
+    .fa-github,
+    .fa-github-alt,
+    .fa-github-square,
+    .fa-weibo,
+    .fa-xing,
+    .fa-xing-square {
+      color: var(--ac-text-soft);
+    }
+  }
+
+  .author__urls_sm a {
+    color: var(--ac-text-soft);
+  }
+
+  /* --- content --- */
+
+  .page__content {
+    color: var(--ac-text-soft);
+
+    blockquote {
+      border-left-color: var(--ac-border);
+      color: var(--ac-muted);
+    }
+  }
+
+  hr {
+    border-color: var(--ac-border);
+  }
+
+  code,
+  pre,
+  .highlight {
+    background-color: var(--ac-surface) !important;
+    color: var(--ac-text) !important;
+  }
+
+  table {
+    color: var(--ac-text-soft);
+
+    th {
+      background-color: var(--ac-surface-2);
+      color: var(--ac-text);
+      border-color: var(--ac-border);
+    }
+
+    td {
+      border-color: var(--ac-border);
+    }
+  }
+
+  img.pub-logo {
+    /* small white-background logos need a nudge to sit on a dark card */
+    background: #fff;
+    border-radius: 3px;
+    padding: 1px 2px;
+  }
+
+  /* --- venue badges re-tinted for dark backgrounds --- */
+
+  .venue--cvpr { background-color: #1e2b3d; color: #8fb6e8; }
+  .venue--corl { background-color: #1c2b21; color: #8fc9a3; }
+  .venue--ral  { background-color: #33211a; color: #e5a883; }
+  .venue--iros { background-color: #2a2338; color: #b9a3e0; }
+
+  .pub-links a {
+    background: var(--ac-surface);
+  }
+}

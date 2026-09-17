@@ -1,0 +1,604 @@
+/* ==========================================================================
+   ACADEMIC — design tokens, section headings, publications, news
+   All colors go through CSS custom properties so dark mode is a single
+   re-declaration (see _dark.scss).
+   ========================================================================== */
+
+:root {
+  --ac-bg:           #ffffff;
+  --ac-surface:      #f8fafc;
+  --ac-surface-2:    #f1f5f9;
+  --ac-text:         #1a1a1a;
+  --ac-text-soft:    #3f4753;
+  --ac-muted:        #6b7280;
+  --ac-border:       #e2e8f0;
+  --ac-border-soft:  #eef2f6;
+  --ac-accent:       #1d4e89;
+  --ac-accent-soft:  #e8effa;
+  --ac-shadow:       0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px rgba(15, 23, 42, .06);
+
+  --ac-radius:       10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/*
+   Section headings
+   ========================================================================== */
+
+/* Sticky masthead is ~3.2em tall — keep anchored sections clear of it. */
+.page__content h1,
+.anchor {
+  scroll-margin-top: 4.5em;
+}
+
+.page__content > h1 {
+  margin: 1.3em 0 .6em;
+  padding-bottom: .35em;
+  font-size: 1.55em;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  color: var(--ac-text);
+  border-bottom: 1px solid var(--ac-border);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/*
+   Publications — teaser on the left, content on the right
+   ========================================================================== */
+
+.publications {
+  margin: 0;
+}
+
+.pub {
+  scroll-margin-top: 4.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  padding: 1.25em 0;
+  border-bottom: 1px solid var(--ac-border-soft);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6em;
+  }
+}
+
+/* --- teaser column --- */
+
+.pub-teaser {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid var(--ac-border);
+  border-radius: var(--ac-radius);
+  background: var(--ac-surface);
+  transition: box-shadow .18s ease, transform .18s ease;
+
+  @include breakpoint($medium) {
+    width: 240px;
+  }
+
+  @include breakpoint($large) {
+    width: 280px;
+  }
+
+  /* Paper figures come in every aspect ratio, so contain (never crop) is the
+     default; use .pub-teaser--cover for a wide banner meant to be cropped. */
+  img,
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--ac-shadow);
+  }
+}
+
+.pub-teaser--cover {
+  img,
+  video {
+    height: 160px;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Placeholder used until a real teaser figure is dropped in. */
+.pub-teaser--placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .35em;
+  height: 170px;
+  background:
+    linear-gradient(135deg, var(--ac-surface) 0%, var(--ac-surface-2) 100%);
+  color: var(--ac-muted);
+  text-align: center;
+
+  .pub-teaser__glyph {
+    font-size: 2em;
+    line-height: 1;
+  }
+
+  .pub-teaser__label {
+    font-size: .72em;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+}
+
+/* --- text column --- */
+
+.pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub-title {
+  display: flex;
+  align-items: baseline;
+  gap: .5em;
+  margin-bottom: .35em;
+  font-size: 1.08em;
+  font-weight: 650;
+  line-height: 1.4;
+
+  a {
+    color: var(--ac-text);
+    text-decoration: none;
+    background-image: linear-gradient(var(--ac-accent), var(--ac-accent));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease, color .2s ease;
+
+    &:hover {
+      color: var(--ac-accent);
+      background-size: 100% 1px;
+    }
+  }
+}
+
+.pub-logo {
+  flex: 0 0 auto;
+  height: 16px;
+  width: auto;
+  align-self: center;
+}
+
+.pub-authors {
+  margin-bottom: .5em;
+  font-size: .92em;
+  line-height: 1.55;
+  color: var(--ac-text-soft);
+
+  strong {
+    color: var(--ac-text);
+    font-weight: 650;
+  }
+
+  sup {
+    color: var(--ac-muted);
+  }
+}
+
+/* Coauthor links stay quiet until hovered. */
+.page__content .pub-authors a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ac-border);
+  transition: color .15s ease, border-color .15s ease;
+
+  &:hover {
+    color: var(--ac-accent);
+    text-decoration: none;
+    border-bottom-color: var(--ac-accent);
+  }
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5em .75em;
+  margin-bottom: .6em;
+}
+
+/* --- venue badge --- */
+
+.venue {
+  display: inline-block;
+  padding: .2em .7em;
+  border-radius: 999px;
+  background-color: var(--ac-surface-2);
+  color: var(--ac-text-soft);
+  font-size: .8em;
+  font-weight: 650;
+  letter-spacing: .01em;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+
+.venue-full {
+  font-size: .85em;
+  font-style: italic;
+  color: var(--ac-muted);
+}
+
+/* --- links row --- */
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45em;
+  margin-bottom: .7em;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: .35em;
+    padding: .2em .65em;
+    border: 1px solid var(--ac-border);
+    border-radius: 6px;
+    background: var(--ac-bg);
+    color: var(--ac-accent);
+    font-size: .82em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease;
+
+    &:hover {
+      background: var(--ac-accent-soft);
+      border-color: var(--ac-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+/* --- bullet highlights --- */
+
+.pub-highlights {
+  margin: 0;
+  padding-left: 1.15em;
+  font-size: .92em;
+  line-height: 1.6;
+  color: var(--ac-text-soft);
+
+  li {
+    margin-bottom: .15em;
+
+    &::marker {
+      color: var(--ac-muted);
+    }
+  }
+}
+
+/*
+   News timeline
+   ========================================================================== */
+
+.news {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__content .news-item {
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+  margin: 0;
+  padding: .38em 0;
+  border-bottom: 1px dashed var(--ac-border-soft);
+  font-size: .95em;
+  line-height: 1.55;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    gap: 1em;
+    align-items: baseline;
+  }
+}
+
+.news-date {
+  flex: 0 0 auto;
+  color: var(--ac-muted);
+  font-size: .85em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+
+  @include breakpoint($medium) {
+    width: 6.5em;
+  }
+}
+
+.news-body {
+  flex: 1 1 auto;
+  color: var(--ac-text-soft);
+
+  strong {
+    color: var(--ac-text);
+  }
+}
+
+/* .page__content a underlines every link, so match its specificity here. */
+.page__content .news-paper {
+  font-weight: 650;
+  color: var(--ac-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease;
+
+  &:hover {
+    text-decoration: none;
+    border-bottom-color: var(--ac-accent);
+  }
+}
+
+.news-venue {
+  display: inline-block;
+  padding: .05em .6em;
+  border-radius: 999px;
+  font-size: .82em;
+  font-weight: 650;
+  line-height: 1.65;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.news-logo {
+  height: 16px;
+  width: auto;
+  vertical-align: -3px;
+  margin: 0 .15em 0 .1em;
+}
+
+/* "show older news" disclosure */
+.news-more {
+  margin-top: .6em;
+
+  summary {
+    display: inline-block;
+    color: var(--ac-accent);
+    cursor: pointer;
+    font-size: .88em;
+    font-weight: 600;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::after {
+      content: " ▾";
+    }
+  }
+
+  &[open] summary::after {
+    content: " ▴";
+  }
+}
+
+/*
+   Venue palette — shared by the publication badges and the news pills
+   ========================================================================== */
+
+.venue--cvpr,
+.news-venue.venue--cvpr { background-color: #e8effa; color: #1d4e89; }
+
+.venue--corl,
+.news-venue.venue--corl { background-color: #e9f3ec; color: #256137; }
+
+.venue--ral,
+.news-venue.venue--ral  { background-color: #fdeeea; color: #9a3412; }
+
+.venue--iros,
+.news-venue.venue--iros { background-color: #f3eefb; color: #5b3a8e; }
+
+/*
+   Education list with school seals
+   ========================================================================== */
+
+.edu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__content .edu-item {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+  margin: 0;
+  padding: .38em 0;
+  border-bottom: 1px dashed var(--ac-border-soft);
+  line-height: 1.45;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.edu-logo {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.edu-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.edu-degree {
+  color: var(--ac-text);
+
+  &::after {
+    content: ", ";
+  }
+}
+
+.edu-school {
+  color: var(--ac-text-soft);
+}
+
+.edu-date {
+  flex: 0 0 auto;
+  width: 11em;
+  font-size: .85em;
+  color: var(--ac-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .page__content .edu-item {
+    flex-wrap: wrap;
+    row-gap: .15em;
+  }
+
+  .edu-degree {
+    display: block;
+
+    &::after { content: none; }
+  }
+
+  .edu-date {
+    width: 100%;
+  }
+
+  .edu-body {
+    flex-basis: 0;
+  }
+}
+
+/*
+   Simple bullet lists (interests, service, awards, education)
+   ========================================================================== */
+
+.page__content > ul:not(.news):not(.edu-list) {
+  margin-top: 0;
+  line-height: 1.6;
+
+  li {
+    margin-bottom: .2em;
+  }
+}
+
+/*
+   Uniform section rhythm: the only gap between sections is the h1's top
+   margin, so collapse the anchor wrappers and trailing block margins.
+   ========================================================================== */
+
+.page__content > p:has(> .anchor:only-child) {
+  height: 0;
+  margin: 0;
+}
+
+.page__content > :has(+ p > .anchor:only-child),
+.page__content > :last-child {
+  margin-bottom: 0;
+}
+
+/* No footer on the page, so leave breathing room below the last section. */
+.page__content {
+  padding-top: 1.2em;
+  padding-bottom: 4em;
+}
+
+/*
+   Active section highlight in the sticky nav
+   ========================================================================== */
+
+.masthead__menu-item a.is-active {
+  color: var(--ac-accent);
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--ac-accent);
+}
+
+/*
+   Legacy helpers kept from the original template
+   ========================================================================== */
+
+.badge {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  margin-top: .5em;
+  margin-left: -.5em;
+  color: white;
+  background-color: #00369f;
+  font-size: .8em;
+}
+
+/*
+   Small-screen refinements
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .page__content > h1 {
+    margin-top: 1.3em;
+    font-size: 1.35em;
+  }
+
+  .pub {
+    padding: 1.1em 0;
+  }
+
+  .pub-teaser img,
+  .pub-teaser video {
+    max-height: 200px;
+  }
+
+  .pub-teaser--placeholder {
+    height: 150px;
+  }
+
+  .pub-title {
+    font-size: 1.02em;
+  }
+
+  .pub-links a {
+    font-size: .8em;
+  }
+
+  .sidebar .author__name {
+    font-size: 1.3em;
+  }
+}
