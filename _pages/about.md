@@ -42,7 +42,7 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
   </li>
   <li class="news-item">
     <span class="news-date">2026.06</span>
-    <span class="news-body">Started my research internship at <img class="news-logo" src="/assets/images/org/bosch-symbol.svg" alt="Bosch"> Bosch USA, working on Vision&#8211;Language&#8211;Action models for long-horizon navigation.</span>
+    <span class="news-body">Started my research internship at <a class="news-org" href="https://www.linkedin.com/company/boschusa"><img class="news-logo" src="/assets/images/org/bosch-symbol.svg" alt="">Bosch USA</a>, working on Vision&#8211;Language&#8211;Action models for long-horizon navigation.</span>
   </li>
   <li class="news-item">
     <span class="news-date">2026.06</span>
