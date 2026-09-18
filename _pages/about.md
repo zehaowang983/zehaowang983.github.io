@@ -30,7 +30,7 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
 <ul class="news">
   <li class="news-item">
     <span class="news-date">2026.09</span>
-    <span class="news-body">We will host the <a class="news-paper" href="https://human-rli.github.io/">Human-Centered Robot Learning and Interaction (HumanRLI)</a> workshop at <span class="news-venue venue--corl">CoRL 2026</span> (Austin, TX, Nov 12)</span>
+    <span class="news-body">We will host the <a class="news-paper" href="https://hc-robot-learning.github.io/">Human-Centered Robot Learning and Interaction (HumanRLI)</a> workshop at <span class="news-venue venue--corl">CoRL 2026</span> (Austin, TX, Nov 12)</span>
   </li>
   <li class="news-item">
     <span class="news-date">2026.09</span>
@@ -212,7 +212,7 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
 
 # 🧑‍🏫 Academic Service
 
-- **Workshop Organizer**: [Human-Centered Robot Learning and Interaction (HumanRLI)](https://human-rli.github.io/), CoRL 2026
+- **Workshop Organizer**: [Human-Centered Robot Learning and Interaction (HumanRLI)](https://hc-robot-learning.github.io/), CoRL 2026
 - **Conference Reviewer**: CVPR, ICCV, CoRL, ICRA, IROS
 - **Journal Reviewer**: RA-L
 
