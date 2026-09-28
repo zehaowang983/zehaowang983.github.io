@@ -30,6 +30,10 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
 <ul class="news">
   <li class="news-item">
     <span class="news-date">2026.09</span>
+    <span class="news-body"><a class="news-paper" href="#pub-libero-perm">LIBERO-PeRM</a> accepted to <span class="news-venue venue--neurips">NeurIPS 2026</span> Datasets and Benchmarks Track</span>
+  </li>
+  <li class="news-item">
+    <span class="news-date">2026.09</span>
     <span class="news-body">We will host the <a class="news-paper" href="https://hc-robot-learning.github.io/">Human-Centered Robot Learning and Interaction (HumanRLI)</a> workshop at <span class="news-venue venue--corl">CoRL 2026</span> (Austin, TX, Nov 12)</span>
   </li>
   <li class="news-item">
@@ -71,6 +75,31 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
   <!-- Teaser figures live in assets/images/pub/ (downscaled from tasl-lab.github.io).
        Figures are never cropped; add class="pub-teaser pub-teaser--cover" if you
        want a wide banner cropped to a fixed height instead. -->
+
+  <div class="pub" id="pub-libero-perm">
+    <div class="pub-teaser">
+      <img src="/assets/images/pub/libero-perm.png" alt="LIBERO-PeRM teaser figure">
+    </div>
+    <div class="pub-body">
+      <div class="pub-title">
+        LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+      </div>
+      <div class="pub-authors">
+        <a href="https://www.cs.ucr.edu/~zli538/index.html">Zhixu Li</a>, Keqian Tang, <a href="https://gonglitian.github.io/">Litian Gong</a>, Jingyu Yao, Wenqian Zhang,
+        Tianze Xu, <strong>Zehao Wang</strong>, <a href="https://scholar.google.com/citations?user=HqULCxoAAAAJ">Yuping Wang</a>, <a href="https://andy-zd.github.io/">Junge Zhang</a>, <a href="https://jiachenli94.github.io/">Jiachen Li</a><sup>&#8225;</sup>
+      </div>
+      <div class="pub-meta">
+        <span class="venue venue--neurips">NeurIPS 2026</span>
+        <span class="venue-full">Conference on Neural Information Processing Systems, Datasets and Benchmarks Track</span>
+      </div>
+      <ul class="pub-highlights">
+        <li>A benchmark for personalized robotic manipulation, treating user preference as a controllable variable alongside tasks and layouts.</li>
+        <li>A procedural pipeline generates paired demonstrations with and without preferences, plus preference-satisfaction metrics and subtask-level metadata.</li>
+        <li>Five task suites (312 tasks) probe zero-shot personalization, learning ability and efficiency, generalization, and preference composition and conflict.</li>
+        <li>Current VLA policies struggle with zero-shot personalization; SFT makes preferences learnable, but generalization and conflict resolution remain difficult.</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="pub" id="pub-coopuq">
     <div class="pub-teaser">

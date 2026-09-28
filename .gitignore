@@ -1,3 +1,6 @@
 _site/
 push.sh
 .DS_Store
+
+# Paper drafts / reviewer copies — never publish
+*.pdf
