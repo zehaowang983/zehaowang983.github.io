@@ -77,12 +77,12 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
        want a wide banner cropped to a fixed height instead. -->
 
   <div class="pub" id="pub-libero-perm">
-    <div class="pub-teaser">
+    <a class="pub-teaser" href="https://libero-perm.github.io/">
       <img src="/assets/images/pub/libero-perm.png" alt="LIBERO-PeRM teaser figure">
-    </div>
+    </a>
     <div class="pub-body">
       <div class="pub-title">
-        LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+        <a href="https://libero-perm.github.io/">LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation</a>
       </div>
       <div class="pub-authors">
         <a href="https://www.cs.ucr.edu/~zli538/index.html">Zhixu Li</a>, Keqian Tang, <a href="https://gonglitian.github.io/">Litian Gong</a>, Jingyu Yao, Wenqian Zhang,
@@ -91,6 +91,11 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
       <div class="pub-meta">
         <span class="venue venue--neurips">NeurIPS 2026</span>
         <span class="venue-full">Conference on Neural Information Processing Systems, Datasets and Benchmarks Track</span>
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2610.22372">&#128196; arXiv</a>
+        <a href="https://libero-perm.github.io/">&#127760; Project</a>
+        <a href="https://github.com/tasl-lab/LIBERO-PeRM">&#128187; Code</a>
       </div>
       <ul class="pub-highlights">
         <li>A benchmark for personalized robotic manipulation, treating user preference as a controllable variable alongside tasks and layouts.</li>
@@ -102,12 +107,12 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
   </div>
 
   <div class="pub" id="pub-coopuq">
-    <div class="pub-teaser">
+    <a class="pub-teaser" href="https://coopuq.github.io/">
       <img src="/assets/images/pub/coopuq.png" alt="CoopUQ teaser figure">
-    </div>
+    </a>
     <div class="pub-body">
       <div class="pub-title">
-        CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting
+        <a href="https://coopuq.github.io/">CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting</a>
       </div>
       <div class="pub-authors">
         <strong>Zehao Wang</strong>, <a href="https://jianpengyao.github.io/">Jianpeng Yao</a>, <a href="https://scholar.google.com/citations?user=HqULCxoAAAAJ">Yuping Wang</a>, Yiping Li, <a href="https://songard.github.io/">Jiaqi Li</a>, <a href="https://www.cs.ucr.edu/~zli538/index.html">Zhixu Li</a>, <a href="https://scholar.google.com/citations?user=Jh_nS28AAAAJ">Kanghoon Lee</a>,
@@ -117,7 +122,10 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
         <span class="venue venue--corl">CoRL 2026</span>
         <span class="venue-full">Conference on Robot Learning</span>
       </div>
-      <!-- No public arXiv / project link yet — add a .pub-links block when there is one. -->
+      <div class="pub-links">
+        <a href="https://coopuq.github.io/">&#127760; Project</a>
+        <a href="https://github.com/tasl-lab/CoopUQ">&#128187; Code</a>
+      </div>
       <ul class="pub-highlights">
         <li>Cooperative occupancy forecasting through cross-robot spatiotemporal feature fusion.</li>
         <li>Constrained multi-agent RL penalizes regions predicted occupied or highly uncertain, adapting risk sensitivity under distribution shift.</li>
@@ -127,12 +135,12 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
   </div>
 
   <div class="pub" id="pub-hiremoma">
-    <div class="pub-teaser">
-      <img src="/assets/images/pub/hire-moma.png" alt="Hierarchical residual policy learning teaser figure">
-    </div>
+    <a class="pub-teaser" href="https://hire-moma.github.io/">
+      <img src="/assets/images/pub/hire-moma.png" alt="HiRe-MoMa teaser figure">
+    </a>
     <div class="pub-body">
       <div class="pub-title">
-        Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance
+        <a href="https://hire-moma.github.io/">HiRe-MoMa: Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance</a>
       </div>
       <div class="pub-authors">
         <a href="https://zhefeigong.github.io/">Zhefei Gong</a>, <a href="https://jianghefeifei.github.io/">Hefeifei Jiang</a>, <strong>Zehao Wang</strong>, <a href="https://jiachenli94.github.io/">Jiachen Li</a><sup>&#8225;</sup>
@@ -140,6 +148,10 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
       <div class="pub-meta">
         <span class="venue venue--corl">CoRL 2026</span>
         <span class="venue-full">Conference on Robot Learning</span>
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2610.20607">&#128196; arXiv</a>
+        <a href="https://hire-moma.github.io/">&#127760; Project</a>
       </div>
       <ul class="pub-highlights">
         <li>A policy-agnostic residual policy fine-tunes a frozen base policy for real-world mobile manipulation.</li>
