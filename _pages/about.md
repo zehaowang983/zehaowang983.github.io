@@ -123,6 +123,7 @@ My research focuses on reliable, human-centered autonomy, with an emphasis on mu
         <span class="venue-full">Conference on Robot Learning</span>
       </div>
       <div class="pub-links">
+        <a href="https://arxiv.org/abs/2610.26852">&#128196; arXiv</a>
         <a href="https://coopuq.github.io/">&#127760; Project</a>
         <a href="https://github.com/tasl-lab/CoopUQ">&#128187; Code</a>
       </div>
